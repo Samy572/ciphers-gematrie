@@ -13,15 +13,21 @@
 		"README.md",
 		"LICENSE.txt"
 	],
-	"scripts": {
-		"prepare": "npm run build"
-	},
+	"scripts": {},
 	"keywords": [
 		"ciphers",
 		"gematria",
 		"esoteric",
 		"numerology"
 	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Samy572/ciphers-gematrie.git"
+	},
+	"bugs": {
+		"url": "https://github.com/Samy572/ciphers-gematrie/issues"
+	},
+	"homepage": "https://github.com/Samy572/ciphers-gematrie#readme",
 	"author": "Samy_ch",
 	"license": "MIT",
 	"packageManager": "pnpm@10.27.0"
