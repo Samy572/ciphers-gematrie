@@ -1,0 +1,28 @@
+{
+	"name": "ciphers-gematria",
+	"version": "1.0.0",
+	"description": "gematria calculator (Ordinal, Sumerian, Chaldean, Primes, etc.)",
+	"main": "index.js",
+	"type": "module",
+	"exports": {
+		".": "./src/index.js",
+		"./ciphers": "./src/calcul.js"
+	},
+	"files": [
+		"src/",
+		"README.md",
+		"LICENSE.txt"
+	],
+	"scripts": {
+		"prepare": "npm run build"
+	},
+	"keywords": [
+		"ciphers",
+		"gematria",
+		"esoteric",
+		"numerology"
+	],
+	"author": "Samy_ch",
+	"license": "MIT",
+	"packageManager": "pnpm@10.27.0"
+}
