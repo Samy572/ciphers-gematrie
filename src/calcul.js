@@ -126,7 +126,7 @@ export function ciphers(text) {
 	return {
 		Ordinal: ordinal(text),
 		Reduction: reduction(text),
-		reverseOrdinal: reverseOrdinal(text),
+		ReverseOrdinal: reverseOrdinal(text),
 		ReverseReduction: reverseReduction(text),
 
 		Standard: standard(text),

@@ -9,7 +9,7 @@ It supports **ESM**, is **tree-shakable**, and allows users to import **all ciph
 
 ```bash
 npm install ciphers-gematria
-# or with yarn 
+# or with yarn
 yarn add ciphers-gematria
 ```
 
@@ -25,7 +25,7 @@ console.log(result);
 {
   Ordinal: 52,
   Reduction: 25,
-  Reverse: 83,
+  ReverseOrdinal: 83,
   ReverseReduction: 20,
   Standard: 133,
   Latin: 103,
