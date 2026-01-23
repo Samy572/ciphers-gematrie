@@ -65,5 +65,12 @@ console.log(result);
 import { sumerian, chaldean } from 'ciphers-gematria';
 
 console.log(sumerian('hello')); // 312
-console.log(chaldean('hello')); // 23
+console.log(chaldean('hello')); // 23🤝
 ```
+
+---
+## 🤝Contribution
+
+Contributions are welcome! If you’d like to add a new cipher.
+
+Fork the repository and create a pull request.
