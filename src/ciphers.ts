@@ -1,4 +1,6 @@
-const standardTable = {
+import { Table } from './types/table';
+
+const standardTable: Table = {
 	A: 1,
 	B: 2,
 	C: 3,
@@ -27,7 +29,7 @@ const standardTable = {
 	Z: 26,
 };
 
-const standardExtendedTable = {
+const standardExtendedTable: Table = {
 	A: 1,
 	B: 2,
 	C: 3,
@@ -56,7 +58,7 @@ const standardExtendedTable = {
 	Z: 800,
 };
 
-const latinTable = {
+const latinTable: Table = {
 	A: 1,
 	B: 2,
 	C: 3,
@@ -85,7 +87,7 @@ const latinTable = {
 	Z: 500,
 };
 
-const capitalsMixedTable = {
+const capitalsMixedTable: Table = {
 	A: 2,
 	B: 4,
 	C: 6,
@@ -114,7 +116,7 @@ const capitalsMixedTable = {
 	Z: 52,
 };
 
-const reverseCapitalsMixedTable = {
+const reverseCapitalsMixedTable: Table = {
 	A: 52,
 	B: 50,
 	C: 48,
@@ -143,7 +145,7 @@ const reverseCapitalsMixedTable = {
 	Z: 2,
 };
 
-const lowercaseTable = {
+const lowercaseTable: Table = {
 	a: 1,
 	b: 2,
 	c: 3,
@@ -172,7 +174,7 @@ const lowercaseTable = {
 	z: 26,
 };
 
-const uppercaseTable = {
+const uppercaseTable: Table = {
 	A: 27,
 	B: 28,
 	C: 29,
@@ -201,7 +203,7 @@ const uppercaseTable = {
 	Z: 52,
 };
 
-const reverseStandardExtendedTable = {
+const reverseStandardExtendedTable: Table = {
 	Z: 1,
 	Y: 2,
 	X: 3,
@@ -230,7 +232,7 @@ const reverseStandardExtendedTable = {
 	A: 800,
 };
 
-const satanicTable = {
+const satanicTable: Table = {
 	A: 36,
 	B: 37,
 	C: 38,
@@ -259,7 +261,7 @@ const satanicTable = {
 	Z: 61,
 };
 
-const reverseSatanicTable = {
+const reverseSatanicTable: Table = {
 	Z: 36,
 	Y: 37,
 	X: 38,
@@ -288,7 +290,7 @@ const reverseSatanicTable = {
 	A: 61,
 };
 
-const singleReductionTable = {
+const singleReductionTable: Table = {
 	A: 1,
 	B: 2,
 	C: 3,
@@ -317,7 +319,7 @@ const singleReductionTable = {
 	Z: 8,
 };
 
-const kvExceptionTable = {
+const kvExceptionTable: Table = {
 	A: 1,
 	B: 2,
 	C: 3,
@@ -346,7 +348,7 @@ const kvExceptionTable = {
 	Z: 8,
 };
 
-const skvExceptionTable = {
+const skvExceptionTable: Table = {
 	A: 1,
 	B: 2,
 	C: 3,
@@ -375,7 +377,7 @@ const skvExceptionTable = {
 	Z: 8,
 };
 
-const reverseSingleReductionTable = {
+const reverseSingleReductionTable: Table = {
 	A: 8,
 	B: 7,
 	C: 6,
@@ -404,7 +406,7 @@ const reverseSingleReductionTable = {
 	Z: 1,
 };
 
-const epExceptionTable = {
+const epExceptionTable: Table = {
 	A: 8,
 	B: 7,
 	C: 6,
@@ -433,7 +435,7 @@ const epExceptionTable = {
 	Z: 1,
 };
 
-const ehpExceptionTable = {
+const ehpExceptionTable: Table = {
 	A: 8,
 	B: 7,
 	C: 6,
@@ -462,7 +464,7 @@ const ehpExceptionTable = {
 	Z: 1,
 };
 
-const primesTable = {
+const primesTable: Table = {
 	A: 2,
 	B: 3,
 	C: 5,
@@ -490,7 +492,7 @@ const primesTable = {
 	Y: 97,
 	Z: 101,
 };
-const trigonalTable = {
+const trigonalTable: Table = {
 	A: 1,
 	B: 3,
 	C: 6,
@@ -519,7 +521,7 @@ const trigonalTable = {
 	Z: 351,
 };
 
-const squaresTable = {
+const squaresTable: Table = {
 	A: 1,
 	B: 4,
 	C: 9,
@@ -548,7 +550,7 @@ const squaresTable = {
 	Z: 676,
 };
 
-const fibonacciTable = {
+const fibonacciTable: Table = {
 	A: 1,
 	B: 1,
 	C: 2,
@@ -577,7 +579,7 @@ const fibonacciTable = {
 	Z: 1,
 };
 
-const reversePrimesTable = {
+const reversePrimesTable: Table = {
 	Z: 2,
 	Y: 3,
 	X: 5,
@@ -606,7 +608,7 @@ const reversePrimesTable = {
 	A: 101,
 };
 
-const reverseTrigonalTable = {
+const reverseTrigonalTable: Table = {
 	Z: 1,
 	Y: 3,
 	X: 6,
@@ -635,7 +637,7 @@ const reverseTrigonalTable = {
 	A: 351,
 };
 
-const septenaryTable = {
+const septenaryTable: Table = {
 	A: 1,
 	B: 2,
 	C: 3,
@@ -664,7 +666,7 @@ const septenaryTable = {
 	Z: 1,
 };
 
-const reverseSquaresTable = {
+const reverseSquaresTable: Table = {
 	Z: 1,
 	Y: 4,
 	X: 9,
@@ -693,7 +695,7 @@ const reverseSquaresTable = {
 	A: 676,
 };
 
-const chaldeanTable = {
+const chaldeanTable: Table = {
 	A: 1,
 	B: 2,
 	C: 3,
@@ -722,7 +724,7 @@ const chaldeanTable = {
 	Z: 7,
 };
 
-const keypadTable = {
+const keypadTable: Table = {
 	A: 2,
 	B: 2,
 	C: 2,
