@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import { Table, TableMixed } from './types/table.js';
+=======
+import { Table } from './types/table';
+>>>>>>> 526cc9284f383222483207f01d654b163b9a89b7
 
 const standardTable: Table = {
 	A: 1,
@@ -29,6 +33,7 @@ const standardTable: Table = {
 	Z: 26,
 };
 
+<<<<<<< HEAD
 const reductionTable: Table = {
 	A: 1,
 	B: 2,
@@ -116,6 +121,8 @@ const reverseReductionTable: Table = {
 	Z: 1,
 };
 
+=======
+>>>>>>> 526cc9284f383222483207f01d654b163b9a89b7
 const standardExtendedTable: Table = {
 	A: 1,
 	B: 2,
@@ -174,6 +181,7 @@ const latinTable: Table = {
 	Z: 500,
 };
 
+<<<<<<< HEAD
 const sumerianTable: Table = {
 	A: 6,
 	B: 12,
@@ -288,6 +296,67 @@ const capitalsMixedTable: TableMixed = {
 };
 
 const capitalAddedTable: TableMixed = {
+=======
+const capitalsMixedTable: Table = {
+	A: 2,
+	B: 4,
+	C: 6,
+	D: 8,
+	E: 10,
+	F: 12,
+	G: 14,
+	H: 16,
+	I: 18,
+	J: 20,
+	K: 22,
+	L: 24,
+	M: 26,
+	N: 28,
+	O: 30,
+	P: 32,
+	Q: 34,
+	R: 36,
+	S: 38,
+	T: 40,
+	U: 42,
+	V: 44,
+	W: 46,
+	X: 48,
+	Y: 50,
+	Z: 52,
+};
+
+const reverseCapitalsMixedTable: Table = {
+	A: 52,
+	B: 50,
+	C: 48,
+	D: 46,
+	E: 44,
+	F: 42,
+	G: 40,
+	H: 38,
+	I: 36,
+	J: 34,
+	K: 32,
+	L: 30,
+	M: 28,
+	N: 26,
+	O: 24,
+	P: 22,
+	Q: 20,
+	R: 18,
+	S: 16,
+	T: 14,
+	U: 12,
+	V: 10,
+	W: 8,
+	X: 6,
+	Y: 4,
+	Z: 2,
+};
+
+const lowercaseTable: Table = {
+>>>>>>> 526cc9284f383222483207f01d654b163b9a89b7
 	a: 1,
 	b: 2,
 	c: 3,
@@ -314,6 +383,12 @@ const capitalAddedTable: TableMixed = {
 	x: 24,
 	y: 25,
 	z: 26,
+<<<<<<< HEAD
+=======
+};
+
+const uppercaseTable: Table = {
+>>>>>>> 526cc9284f383222483207f01d654b163b9a89b7
 	A: 27,
 	B: 28,
 	C: 29,
@@ -342,6 +417,7 @@ const capitalAddedTable: TableMixed = {
 	Z: 52,
 };
 
+<<<<<<< HEAD
 const reverseCapitalsMixedTable: TableMixed = {
 	Z: 1,
 	z: 2,
@@ -452,6 +528,8 @@ const reverseCapsAddedTable: TableMixed = {
 	A: 52,
 };
 
+=======
+>>>>>>> 526cc9284f383222483207f01d654b163b9a89b7
 const reverseStandardExtendedTable: Table = {
 	Z: 1,
 	Y: 2,
