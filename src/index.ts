@@ -29,3 +29,49 @@ export { septenary } from './ciphers/septenary.js';
 export { reverseSquares } from './ciphers/reverseSquares.js';
 export { chaldean } from './ciphers/chaldean.js';
 export { keypad } from './ciphers/keypad.js';
+
+import * as allCiphers from './index.js';
+
+
+const orderedCiphers: [string, (text: string) => number][] = [
+  ['Ordinal', allCiphers.ordinal],
+  ['Reduction', allCiphers.reduction],
+  ['ReverseOrdinal', allCiphers.reverseOrdinal],
+  ['ReverseReduction', allCiphers.reverseReduction],
+  ['Standard', allCiphers.standard],
+  ['Latin', allCiphers.latin],
+  ['Sumerian', allCiphers.sumerian],
+  ['ReverseSumerian', allCiphers.reverseSumerian],
+  ['CapitalsMixed', allCiphers.capitalsMixed],
+  ['CapitalsAdded', allCiphers.capitalsAdd],
+  ['ReverseCapsMixed', allCiphers.reverseCapsMixed],
+  ['ReverseCapsAdded', allCiphers.reverseCapsAdded],
+  ['ReverseStandard', allCiphers.reverseStandard],
+  ['Satanic', allCiphers.satanic],
+  ['ReverseSatanic', allCiphers.reverseSatanic],
+  ['SingleReduction', allCiphers.singleReduction],
+  ['KvException', allCiphers.kvException],
+  ['SkvException', allCiphers.skvException],
+  ['ReverseSingleReduction', allCiphers.reverseSingleReduction],
+  ['EpException', allCiphers.epException],
+  ['EhpException', allCiphers.ehpException],
+  ['Primes', allCiphers.primes],
+  ['Trigonal', allCiphers.trigonal],
+  ['Squares', allCiphers.squares],
+  ['Fibonacci', allCiphers.fibonacci],
+  ['ReversePrimes', allCiphers.reversePrimes],
+  ['ReverseTrigonal', allCiphers.reverseTrigonal],
+  ['Septenary', allCiphers.septenary],
+  ['ReverseSquares', allCiphers.reverseSquares],
+  ['Chaldean', allCiphers.chaldean],
+  ['Keypad', allCiphers.keypad],
+];
+
+export function ciphers(text: string) {
+  const result: Record<string, number> = {};
+  for (const [name, fn] of orderedCiphers) {
+    result[name] = fn(text);
+  }
+  return result;
+}
+
