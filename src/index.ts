@@ -29,6 +29,7 @@ export { septenary } from './ciphers/septenary.js';
 export { reverseSquares } from './ciphers/reverseSquares.js';
 export { chaldean } from './ciphers/chaldean.js';
 export { keypad } from './ciphers/keypad.js';
+export { createCipher } from './ciphers/custom.js';
 
 import * as allCiphers from './index.js';
 
