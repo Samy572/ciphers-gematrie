@@ -1,4 +1,4 @@
-import { Table, TableMixed } from './types/table.js';
+import { Table } from './types/table.js';
 
 const standardTable: Table = {
 	A: 1,
@@ -232,7 +232,7 @@ const reverseSumerianTable: Table = {
 	A: 156,
 };
 
-const capitalsMixedTable: TableMixed = {
+const capitalsMixedTable: Table = {
 	A: 1,
 	a: 2,
 	B: 3,
@@ -287,7 +287,7 @@ const capitalsMixedTable: TableMixed = {
 	z: 52,
 };
 
-const capitalAddedTable: TableMixed = {
+const capitalAddedTable: Table = {
 	a: 1,
 	b: 2,
 	c: 3,
@@ -342,7 +342,7 @@ const capitalAddedTable: TableMixed = {
 	Z: 52,
 };
 
-const reverseCapitalsMixedTable: TableMixed = {
+const reverseCapitalsMixedTable: Table = {
 	Z: 1,
 	z: 2,
 	Y: 3,
@@ -397,7 +397,7 @@ const reverseCapitalsMixedTable: TableMixed = {
 	a: 52,
 };
 
-const reverseCapsAddedTable: TableMixed = {
+const reverseCapsAddedTable: Table = {
 	z: 1,
 	y: 2,
 	x: 3,
