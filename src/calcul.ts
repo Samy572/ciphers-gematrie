@@ -30,7 +30,7 @@ import {
 	reductionTable,
 	capitalAddedTable,
 	reverseCapsAddedTable,
-} from './ciphers.js';
+} from './table.js';
 import { Table } from './types/table.js';
 import { CipherFn } from './types/cipherFn.js';
 
@@ -41,17 +41,13 @@ function cleanText(text: string) {
 
 // Calculate value
 function calcValue(text: string, table: Table): number {
-	const letters = cleanText(text).split('');
-	let sum = 0;
-	for (const char of letters) {
-		let val = table[char as keyof Table] || 0;
-		sum += val;
-	}
-	return sum;
+  return cleanText(text)
+	.split('')
+	.reduce((sum, char) => sum + (table[char] || 0), 0);
 }
 
 // Capital added, mixed
-function calcCapitals(text: string, table: Record<string, number>): number {
+function calcCapitals(text: string, table: Table): number {
 	let sum = 0;
 	for (const char of text) {
 		let val = table[char];
@@ -118,43 +114,43 @@ export const keypad: CipherFn = (text) => calcValue(text, keypadTable);
 
 export function ciphers(text: string) {
 	return {
-		Ordinal: ordinal(text),
-		Reduction: reduction(text),
-		ReverseOrdinal: reverseOrdinal(text),
-		ReverseReduction: reverseReduction(text),
+		Ordinal: ordinal(text), 
+		Reduction: reduction(text), 
+		ReverseOrdinal: reverseOrdinal(text), 
+		ReverseReduction: reverseReduction(text), 
 
-		Standard: standard(text),
-		Latin: latin(text),
-		Sumerian: sumerian(text),
-		ReverseSumerian: reverseSumerian(text),
+		Standard: standard(text), 
+		Latin: latin(text), 
+		Sumerian: sumerian(text), 
+		ReverseSumerian: reverseSumerian(text), 
 
-		CapitalsMixed: capitalsMixed(text),
-		CapitalsAdded: capitalsAdd(text),
-		ReverseCapsMixed: reverseCapsMixed(text),
-		ReverseCapsAdded: reverseCapsAdded(text),
+		CapitalsMixed: capitalsMixed(text), 
+		CapitalsAdded: capitalsAdd(text), 
+		ReverseCapsMixed: reverseCapsMixed(text), 
+		ReverseCapsAdded: reverseCapsAdded(text), 
 
-		ReverseStandard: reverseStandard(text),
-		Satanic: satanic(text),
-		ReverseSatanic: reverseSatanic(text),
-		SingleReduction: singleReduction(text),
+		ReverseStandard: reverseStandard(text), 
+		Satanic: satanic(text), 
+		ReverseSatanic: reverseSatanic(text), 
+		SingleReduction: singleReduction(text), 
 
-		KvException: kvException(text),
-		SkvException: skvException(text),
-		ReverseSingleReduction: reverseSingleReduction(text),
-		EpException: epException(text),
+		KvException: kvException(text), 
+		SkvException: skvException(text), 
+		ReverseSingleReduction: reverseSingleReduction(text), 
+		EpException: epException(text), 
 
-		EhpException: ehpException(text),
-		Primes: primes(text),
-		Trigonal: trigonal(text),
-		Squares: squares(text),
+		EhpException: ehpException(text), 
+		Primes: primes(text), 
+		Trigonal: trigonal(text), 
+		Squares: squares(text), 
 
-		Fibonacci: fibonacci(text),
-		ReversePrimes: reversePrimes(text),
-		ReverseTrigonal: reverseTrigonal(text),
+		Fibonacci: fibonacci(text), 
+		ReversePrimes: reversePrimes(text), 
+		ReverseTrigonal: reverseTrigonal(text), 
 
-		ReverseSquares: reverseSquares(text),
-		Chaldean: chaldean(text),
-		Septenary: septenary(text),
-		Keypad: keypad(text),
+		ReverseSquares: reverseSquares(text), 
+		Chaldean: chaldean(text), 
+		Septenary: septenary(text), 
+		Keypad: keypad(text), 
 	};
 }
