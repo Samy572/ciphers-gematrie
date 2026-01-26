@@ -1,6 +1,6 @@
 {
 	"name": "ciphers-gematria",
-	"version": "1.0.4",
+	"version": "2.0.0",
 	"description": "gematria calculator (Ordinal, Sumerian, Chaldean, Primes, etc.)",
 	"type": "module",
 	"main": "dist/index.cjs.js",
@@ -8,7 +8,7 @@
 	"types": "dist/index.d.ts",
 	"exports": {
 		".": {
-			"import": "./dist/index.js",
+			"import": "./dist/index.js",   
 			"require": "./dist/index.cjs"
 		}
 	},
