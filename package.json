@@ -2,24 +2,29 @@
 	"name": "ciphers-gematria",
 	"version": "1.0.4",
 	"description": "gematria calculator (Ordinal, Sumerian, Chaldean, Primes, etc.)",
-	"main": "dist/index.js",
+	"main": "dist/index.cjs.js",
+	"module": "dist/index.esm.js",
 	"types": "dist/index.d.ts",
 	"type": "module",
 	"exports": {
-		".": "./dist/index.js",
-		"./ciphers": "./dist/calcul.js"
+		".": {
+			"import": "./dist/index.esm.js",
+			"require": "./dist/index.cjs.js"
+		}
 	},
+	"sideEffects": false,
 	"files": [
 		"dist/",
 		"README.md",
 		"LICENSE.txt"
 	],
 	"scripts": {
-		"build": "tsc"
+		"build": "tsup"
 	},
 	"keywords": [
 		"ciphers",
 		"gematria",
+		"calculator",
 		"esoteric",
 		"numerology"
 	],
@@ -27,7 +32,7 @@
 		"type": "git",
 		"url": "git+https://github.com/Samy572/ciphers-gematrie.git"
 	},
-	"bugs": {
+	"issues": {
 		"url": "https://github.com/Samy572/ciphers-gematrie/issues"
 	},
 	"homepage": "https://github.com/Samy572/ciphers-gematrie#readme",
@@ -35,6 +40,7 @@
 	"license": "MIT",
 	"packageManager": "pnpm@10.27.0",
 	"devDependencies": {
+		"tsup": "^8.5.1",
 		"typescript": "^5.9.3"
 	}
 }
