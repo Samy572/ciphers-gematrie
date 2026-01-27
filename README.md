@@ -69,7 +69,7 @@ console.log(result);
 import { sumerian, latin, chaldean } from 'ciphers-gematria'; 
 
 console.log(sumerian('hello')); // 312
-console.log(gematria.chaldean('hello')); // 23
+console.log(chaldean('hello')); // 23
 ```
 
 ### CJS
@@ -162,7 +162,7 @@ console.log(myCustomCipher('hello'));
 </table>
 
 ---
-### 🤝Contribution
+## 🤝Contribution
 
 Contributions are welcome! If you’d like to add a new cipher.
 
