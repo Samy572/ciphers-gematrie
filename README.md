@@ -76,7 +76,7 @@ console.log(chaldean('hello')); // 23
 ```javascript
 const gematria = require('ciphers-gematria');
 
-console.log(gematria.latin('hello')); // 312
+console.log(gematria.latin('hello')); // 103
 console.log(gematria.chaldean('hello')); // 23
 ```
 
